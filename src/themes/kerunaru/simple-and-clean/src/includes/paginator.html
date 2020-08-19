@@ -1,0 +1,15 @@
+{% if page.pagination.total_pages > 1 %}
+<nav class="row" aria-label="Page navigation">
+  <div class="col">
+    <ul class="pagination justify-content-end">
+      <li class="page-item {% if not page.pagination.previous_page %}disabled{% endif %}">
+          <a class="page-link" {% if page.pagination.previous_page %}href="{{ page.pagination.previous_page_url }}"{% endif %}>Anterior</a>
+      </li>
+      <li class="page-item {% if not page.pagination.next_page %}disabled{% endif %}">
+          <a class="page-link" {% if page.pagination.next_page %}href="{{ page.pagination.next_page_url }}"{% endif %}>Siguiente</a>
+      </li>
+    </ul>
+  </div>
+  <div class="col"></div>
+</nav>
+{% endif %}

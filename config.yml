@@ -1,0 +1,28 @@
+title: 'backspace'
+description: 'Historias aleatorias de un programador'
+logo: spresso-logo.png
+url: 'https://kerunaru.info'
+parsedown_actived: true
+comments:
+    enabled: false
+    disqus_shortname: ''
+author:
+    name: 'Juan Manuel Cabello'
+    twitter: kerunaru
+    github: 'https://github.com/kerunaru'
+    instagram: 'https://instagram.com/kerunaru'
+collections:
+    posts: { output: true }
+    projects: { output: true }
+    books: { output: true }
+feed:
+    max_item: 10
+open_graph:
+    locale: es_ES
+code_highlight: true
+top_menu:
+    - { name: Blog, url: / }
+    - { name: Juegos, url: /juegos }
+    - { name: Libros, url: /libros }
+themes:
+    name: kerunaru/simple-and-clean
