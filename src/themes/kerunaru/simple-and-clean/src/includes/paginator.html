@@ -3,10 +3,10 @@
   <div class="col">
     <ul class="pagination justify-content-end">
       <li class="page-item {% if not page.pagination.previous_page %}disabled{% endif %}">
-          <a class="page-link" {% if page.pagination.previous_page %}href="{{ page.pagination.previous_page_url }}"{% endif %}>Anterior</a>
+          <a class="page-link" {% if page.pagination.previous_page %}href="{{ page.pagination.previous_page_url }}"{% endif %}>Reciente</a>
       </li>
       <li class="page-item {% if not page.pagination.next_page %}disabled{% endif %}">
-          <a class="page-link" {% if page.pagination.next_page %}href="{{ page.pagination.next_page_url }}"{% endif %}>Siguiente</a>
+          <a class="page-link" {% if page.pagination.next_page %}href="{{ page.pagination.next_page_url }}"{% endif %}>Antiguo</a>
       </li>
     </ul>
   </div>
